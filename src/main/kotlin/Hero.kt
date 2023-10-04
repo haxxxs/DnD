@@ -76,8 +76,7 @@ class Hero(
         println("$name`s hp is $hp")
         println("$name`s attack is $attack")
         println("$name`s defense is $defense")
-        println("$name`s min damage is $minDamage")
-        println("$name`s min damage is $maxDamage")
+        println("$name`s damage is $minDamage - $maxDamage")
         println("Count of potions $cntOfPot\n")
     }
 
@@ -121,7 +120,7 @@ class Hero(
             if (input.nextLine() == "Y"){
                 this.roundsAttack(monster)
             }
-            else{
+            else {
                 return
             }
         }
@@ -132,6 +131,7 @@ class Hero(
             if (input.nextLine() == "Y"){
                 hp = maxHp
                 monster.hp = maxHp
+                cntOfPot = 4
                 this.roundsAttack(monster)
             }
             else{

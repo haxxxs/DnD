@@ -39,7 +39,7 @@ open class Creature(
         hp -= damage
         if (hp <= 0.0){
             hp = 0.0
-            println("$name is dead")
+            println("$name take $damage and he is dead")
         }
         else{
             println("$name take $damage damage. Now he is have $hp HP")

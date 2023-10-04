@@ -71,8 +71,7 @@ class Monster(
         println("$name`s hp is $hp")
         println("$name`s attack is $attack")
         println("$name`s defense is $defense")
-        println("$name`s min damage is $minDamage")
-        println("$name`s min damage is $maxDamage\n")
+        println("$name`s damage is $minDamage - $maxDamage")
     }
 
 }
